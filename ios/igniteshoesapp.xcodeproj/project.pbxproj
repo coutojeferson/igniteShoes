@@ -21,12 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		32D63FF2951E4F5AAAFF01B9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C348769E747F4414AE93A798;
-			remoteInfo = OneSignalNotificationServiceExtension;
+		AD159A9C6FB648588DA83684 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C348769E747F4414AE93A798 /* OneSignalNotificationServiceExtension */;
+			targetProxy = 32D63FF2951E4F5AAAFF01B9 /* PBXContainerItemProxy */;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -145,6 +143,7 @@
 				D65327D7A22EEC0BE12398D9 /* Pods */,
 				D7E4C46ADA2E9064B798F356 /* ExpoModulesProviders */,
 				2EA85140AE794483BEDA2123 /* OneSignalNotificationServiceExtension */,
+				C08857BA0DE54711B8CF25B8 /* OneSignalNotificationServiceExtension */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -185,6 +184,7 @@
 				2EA85140AE794483BEDA2123 /* OneSignalNotificationServiceExtension */,
 				08B9795D717E855276BB3EFE /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
 				2C500BD9AB232E4B5AD607FD /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+				C08857BA0DE54711B8CF25B8 /* OneSignalNotificationServiceExtension */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -195,6 +195,18 @@
 				92DBD88DE9BF7D494EA9DA96 /* igniteshoesapp */,
 			);
 			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
+		C08857BA0DE54711B8CF25B8 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DF3E9AF124E588A066549 /* NotificationService.h */,
+				FDA219704EAD4E6BA91D5879 /* OneSignalNotificationServiceExtension.entitlements */,
+				C21580998479423AA46A41B9 /* OneSignalNotificationServiceExtension-Info.plist */,
+				C5223AC329434069815A9B34 /* NotificationService.m */,
+			);
+			name = OneSignalNotificationServiceExtension;
+			path = OneSignalNotificationServiceExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -476,7 +488,7 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rocketseat.igniteshoes;
-				PRODUCT_NAME = igniteshoesapp;
+				PRODUCT_NAME = "igniteshoesapp";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -502,7 +514,7 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rocketseat.igniteshoes;
-				PRODUCT_NAME = igniteshoesapp;
+				PRODUCT_NAME = "igniteshoesapp";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
